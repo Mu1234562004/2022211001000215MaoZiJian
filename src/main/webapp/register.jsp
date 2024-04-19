@@ -52,7 +52,8 @@
 </head>
 <body>
 <h1>Registration Form</h1>
-<form action="registerAction.jsp" method="post">
+<%@include file="header.jsp"%>
+<form action="http://localhost:8080/MaoZiJian2022211001000215_war/register" method="post" >
     <label for="username">Username:</label>
     <input type="text" id="username" name="username" required><br>
     <label for="password">Password:</label>
@@ -69,5 +70,6 @@
     <input type="text" id="birthdate" name="birthdate" required pattern="\d{4}-\d{2}-\d{2}"><br>
     <input type="submit" value="Register">
 </form>
+<%@include file="footer.jsp"%>
 </body>
 </html>
